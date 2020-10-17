@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Imágen con FancyBox</title>
+	<link rel="stylesheet" href="css/micss.css">
+	<link rel="stylesheet" href="jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css">
+	<script src="Jquery/jquery-1.6.3.min.js"></script>
+	<script src="jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#galeria a").fancybox ({
+				'overlayColor'  :   '#797e79',
+				'overlayOpacity':   .6,
+				'transitionIn'	:	'elastic',
+				'transitionOut'	:	'elastic',
+				'speedIn'		:	3000, 
+				'speedOut'		:	3000, 
+				'overlayShow'	:	true,
+				'cyclic'		:   true,
+
+			});
+
+		});
+	</script>
+
+</head>
+<body>
+	
+<div class="contenido">
+	<div class="principal">
+		<h1>Galeria de imagen</h1>
+
+		<div id="galeria">
+			<a href="imgs/carros.jpg" rel="gallery" title="Esto es un carro">
+				<img src="imgs/carros.jpg" width="100" height="100" alt="">
+
+  			</a>
+  			<a href="imgs/arbol.jpg" rel="gallery" title="Esto es un arbol">
+			<img src="imgs/arbol.jpg" width="100" height="100" alt="">
+  			</a>
+  			<a href="imgs/jesse_barrios.jpg" rel="gallery" title="Este soy yo"> 
+  			<img src="imgs/jesse_barrios.jpg" width="100" height="100" alt="">
+  			</a>
+  		</div>
+ </div>
+</div>
+	
+
+</body>
+</html>
